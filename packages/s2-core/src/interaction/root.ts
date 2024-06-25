@@ -488,6 +488,9 @@ export class RootInteraction {
         );
       });
     }
+    this.interactions.forEach((interaction:BaseEvent)=>{
+      interaction.bindEvents();
+    })
   }
 
   private registerEventController() {

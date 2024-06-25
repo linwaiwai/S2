@@ -15,7 +15,6 @@ export abstract class BaseEvent {
 
   constructor(spreadsheet: SpreadSheet) {
     this.spreadsheet = spreadsheet;
-    this.bindEvents();
   }
 
   public getCellAppendInfo<T extends Record<string, any> = CellAppendInfo>(
